@@ -2,6 +2,8 @@
         return ( <
             body >
             <
+            hstack >
+            <
             table >
             <
             ul >
@@ -47,6 +49,7 @@
             <
             /ul> <
             /table> <
+            /hstack> <
             /body>
         )
     };
