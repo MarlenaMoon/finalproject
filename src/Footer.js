@@ -2,8 +2,6 @@
         return ( <
             body >
             <
-            hstack >
-            <
             table >
             <
             ul >
@@ -47,9 +45,10 @@
             <
             li > < a href = "#fb" > Facebook < /a></li >
             <
+            li > < a href = "#snapchat" > Snapchat < /a></li >
+            <
             /ul> <
             /table> <
-            /hstack> <
             /body>
         )
     };
