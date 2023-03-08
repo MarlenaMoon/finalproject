@@ -1,10 +1,8 @@
 function Nav() {
     return ( <
-        body >
-        <
-        header >
-        <
         nav >
+        <
+        ul >
         <
         li > < a href = "#home" > Home < /a></li >
         <
@@ -18,9 +16,8 @@ function Nav() {
         <
         li > < a href = "#login" > Log In < /a></li >
         <
-        /nav> <
-        /header> <
-        /body>
+        /ul> < /
+        nav >
     );
 }
 export default Nav;

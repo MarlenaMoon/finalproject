@@ -7,23 +7,22 @@ import Footer from './Footer';
 
 
 
+
 function App() {
     return ( <
         >
         <
-        body >
+        Header / >
         <
-        Header > zIndex: < /Header> <
-        Nav > zIndex: < /Nav> <
-        /body> <
-        body >
+        Nav / >
         <
-        Main > < /Main> <
-        /body> <
-        body >
+        div >
         <
-        Footer > zIndex: < /Footer> <
-        /body> <
+        Main / >
+        <
+        /div> <
+        Footer / >
+        <
         />
     );
 }
