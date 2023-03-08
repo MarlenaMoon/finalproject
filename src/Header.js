@@ -1,13 +1,13 @@
-< body >
-    <
-    title > Little Lemon < /title> <
-    /body>
-
 function Header() {
-    return <h1 > Little Lemon < /h1>; <
-        img src = "image-url.jpg"
-    alt = "Little Lemon restaurant" / >
-};
-
+    return ( <
+        div >
+        <
+        h1 > Little Lemon < /h1> <
+        img src = "finalproject/src/icons_assets/Logo.svg"
+        alt = "Little Lemon restaurant logo" / >
+        <
+        /div>
+    );
+}
 
 export default Header;
