@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="finalproject/src/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Mediterranean food with a twist" />
+    <link rel="icon" href="finalproject/src/logo.svg" />
     <link rel="apple-touch-icon" href="finalproject/src/logo.svg" />
-
+    <link rel="stylesheet" href="finalproject/src/App.css" />
     <link rel="manifest" href="finalproject/src/logo.svg" />
 
     <title>Little Lemon</title>
@@ -18,9 +18,9 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <header>
-        <nav>
-            Little Lemon
-            <img src="finalproject/src/icons_assets/Logo .svg">
+        <div class="logo">
+            <img src="finalproject/src/icons_assets/Logo .svg" alt="logo" sty="width: 150px;"> Little Lemon</div>
+        <nav id="navigation">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#menu">Menu</a>
@@ -31,156 +31,229 @@
     </header>
     <main>
         <div>
-            <article class="hero">
-                <h1>Little Lemon</h1>
-                <h4>Chicago</h4>
-                <img src="finalproject/src/icons_assets/restauranfood.jpg"><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href='/book' role="button">Reserve a Table</a>
-            </article>
+            <div class="hero">
+                <div class="container">
+                    <article>
+                        <h1>Little Lemon</h1>
+                        <h4>Chicago</h4>
+
+                        <p>Classic Italian food with a Mediterranean twist.</p>
+                        <button>Reserve a Table</button>
+                    </article>
+                </div>
+                <div class="hero-img">
+                    <img src="finalproject/src/icons_assets/restauranfood.jpg" alt="Mario and Adrian"><br>
+                </div>
+            </div>
         </div>
-        <article id="specials-board">
-            <h1>This weeks specials!</h1>
-            <a href='/book' role="button">Order Now</a>
-        </article>
-        <div style="display:flex">
-            <article class="salad" style="flex: 1;">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h3> Greek Salad </h3>
-                                <img src="finalproject/src/icons_assets/greek salad.jpg" alt="Greek Salad" />
-                                <h5> $13 .99 </h5>
-                                <h6> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </h6>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-            <article class="falafel" style="flex: 1;">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h3> Falafel </h3>
-                                <img src="finalproject/src/icons_assets/falafel.jpeg" alt="Falafel" />
-                                <h5> $13 .99 </h5>
-                                <h6> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </h6>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-            <article class="lemondessert" style="flex: 1;">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h3> Lemon Dessert </h3>
-                                <img src="finalproject/src/icons_assets/lemon dessert.jpg" alt="Lemon Dessert" />
-                                <h5> $3 .99 </h5>
-                                <h6> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </h6>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
+        <div class="specials ">
+            <div class="specials-heading">
+                <p><b>This weeks specials!</b></p><br><br>
+                <button>View Full Menu</button><br><br>
+            </div>
+            <div style="display:flex ">
+                <div class="salad " style="flex: 1; ">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="finalproject/src/icons_assets/greek salad.jpg " alt="Greek Salad " />
+                                    <div class="sp-title">
+
+                                        <p><b>Greek Salad</b></p>
+                                        <h5> $13 .99 </h5>
+
+                                    </div>
+                                    <p>Tasty Greek Salad with feta cheese.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="falafel " style="flex: 1; ">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="finalproject/src/icons_assets/falafel.jpeg " alt="Falafel " />
+                                    <div class="sp-title">
+
+                                        <p><b>Falafel</b></p>
+                                        <h5> $13 .99 </h5>
+
+                                    </div>
+                                    <p>Crispy falafel with herbs and spices.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="lemondessert " style="flex: 1; ">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="finalproject/src/icons_assets/lemon dessert.jpg " alt="Lemon Dessert " />
+                                    <div class="sp-title">
+                                        <p><b>Lemon Dessert</b></p>
+                                        <h5>$3 .99</h5>
+                                    </div>
+                                    <p>Delicious sweet white cake with a tangy lemon custard filling.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-        <article id="Testimonial">
+        <div class="testimonial ">
             <h1>Testimonials</h1>
-        </article>
-        <div style="display:flex">
-            <article class="Test1" style="flex: 1;">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4> Testimonial 1 </h4>
-                                <img src="finalproject/icons_assets/istockphoto-685132245-612x612.jpg" alt="Featured photo" />
-                                <h6> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </h6>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-            <article class="Test2" style="flex: 1;">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4> Testimonial 2 </h4>
-                                <img src="finalproject/icons_assets/istockphoto-685132245-612x612.jpg" alt="Featured photo" />
-                                <h6> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </h6>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-            <article class="Test3" style="flex: 1;">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4> Testimonial 3 </h4>
-                                <img src="finalproject/icons_assets/istockphoto-685132245-612x612.jpg" alt="Featured photo" />
-                                <h6> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </h6>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-            <article class="Test4" style="flex: 1;">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4> Testimonial 4 </h4>
-                                <img src="finalproject/icons_assets/istockphoto-685132245-612x612.jpg" alt="Featured photo" />
-                                <h6> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </h6>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
+            <div style="display:flex ">
+                <div class="test1 " style="flex: 1; ">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="t1">
+                                        <li><b>Fabion</b></li>
+                                        <img src="finalproject/icons_assets/istockphoto-685132245-612x612.jpg " alt="Featured photo " />
+
+                                        <p>This was the best food EVER!</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="test2 " style="flex: 1; ">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="t2">
+                                        <li><b>Jillian</b></li>
+                                        <img src="finalproject/icons_assets/istockphoto-685132245-612x612.jpg " alt="Featured photo " />
+                                        <li>Jillian</li>
+
+                                        <p>I love the atomospere. <br>It's so trendy and comfortable.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="test3 " style="flex: 1; ">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="t3">
+                                        <li><b>Brendon</b></li>
+                                        <img src="finalproject/icons_assets/istockphoto-685132245-612x612.jpg " alt="Featured photo " />
+
+                                        <p>My absolute favorite place to stop for lunch! The food is so fresh.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="test4 " style="flex: 1; ">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="t4">
+                                        <li><b>Alix</b></li>
+                                        <img src="finalproject/icons_assets/istockphoto-685132245-612x612.jpg " alt="Featured photo " />
+
+                                        <p>My daughter can't get enough of that Lemon Dessert!</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="About">
+            <div class="container">
+                <article>
+
+                    <h1>Little Lemon</h1>
+                    <subtext><b>Chicago</b></subtext><br><br><br>
+
+
+                    <p><br>The chefs draw inspiration from Italian, Greek, and Turkish culture.<br>The restaurant has a rustic and relaxed atmosphere.<br>Mario relies on family recipes and his experience as a chef in Italy. <br>Adrian uses his traveling
+                        experience to put a spin on modern recipes.</p>
+                </article>
+            </div>
+            <img src="finalproject/src/icons_assets/Mario and Adrian A.jpg " alt="Mario and Adrian " width="150px" height="150px" />
+            </ul>
         </div>
     </main>
     <footer>
-        <div style="display: inline-block;">
-            <table class="footernav">
-                <tbody>
-                    <tr>
-                        <td>
-                            <h1>Navigation</h1>
-                            <ul>
-                                <li> <a href="#home"> Home </a></li>
-                                <li> <a href="#about"> About </a></li>
-                                <li> <a href="#menu"> Menu </a></li>
-                                <li> <a href="#reservations"> Reservations </a></li>
-                                <li> <a href="#orderonline"> Order Online </a></li>
-                                <li> <a href="#login"> Log In </a></li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h1> Contact </h1>
-                            <ul>
-                                <li> <a href="#address"> Address </a></li>
-                                <li> <a href="#phone"> Phone Number </a></li>
-                                <li> <a href="#email"> Email </a></li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h1> Connect </h1>
-                            <ul>
-                                <li> <a href="#insta"> Instagram </a></li>
-                                <li> <a href="#tt"> TikTok </a></li>
-                                <li> <a href="#fb"> Facebook </a></li>
-                                <li> <a href="#snapchat"> Snapchat </a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
+        <div class="foot-img">
+            <img src="finalproject/icons_assets/Asset 20@4x.png" alt="Little Lemon Logo" width="150px" height="150px" />
+        </div>
+        <div style="display: flex; ">
+            <div class="footnav" style="flex: 1; ">
+                <table>
+                    <tbody>
+                        <ul>
+                            <li>
+                                <p><b>Navigation</b></p>
+                            </li>
+                            <li> <a href="#home "> Home </a></li>
+                            <li> <a href="#about "> About </a></li>
+                            <li> <a href="#menu "> Menu </a></li>
+                            <li> <a href="#reservations "> Reservations </a></li>
+                            <li> <a href="#orderonline "> Order Online </a></li>
+                            <li> <a href="#login "> Log In </a></li>
+                        </ul>
+                    </tbody>
+                </table>
+            </div>
+            <div class="footcontact " style="flex: 1; ">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <p> <b>Contact</b> </p>
+                                    </li>
+                                    <li> <a href="#address "> Address </a></li>
+                                    <li> <a href="#phone "> Phone Number </a></li>
+                                    <li> <a href="#email "> Email </a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="footconnect " style="flex: 1; ">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <p><b> Connect</b> </p>
+                                    </li>
+                                    <li> <a href="#insta "> Instagram </a></li>
+                                    <li> <a href="#tt "> TikTok </a></li>
+                                    <li> <a href="#fb "> Facebook </a></li>
+                                    <li> <a href="#snapchat "> Snapchat </a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </tbody>
             </table>
+        </div>
         </div>
     </footer>
 </body>
